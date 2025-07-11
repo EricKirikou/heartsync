@@ -83,16 +83,89 @@ This will output optimized files into the `dist` folder.
 ```
 heartsync/
 ├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+│
 ├── src/
 │   ├── components/
+│   │   ├── ui/                           # Shadcn UI components
+│   │   │   ├── accordion.tsx
+│   │   │   ├── alert-dialog.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── ...
+│   │   │   └── use-toast.ts
+│   │   ├── ActionButtons.tsx
+│   │   ├── BoostModal.tsx
+│   │   ├── ChatScreen.tsx
+│   │   ├── DailyLimitWarning.tsx
+│   │   ├── DiscoverActions.tsx
+│   │   ├── DiscoverStats.tsx
+│   │   ├── DiscoverTab.tsx
+│   │   ├── EditProfileModal.tsx
+│   │   ├── FilterButton.tsx
+│   │   ├── FilterModal.tsx
+│   │   ├── LoadingScreen.tsx
+│   │   ├── LoginScreen.tsx
+│   │   ├── MatchesTab.tsx
+│   │   ├── MessagesTab.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── NoUsersScreen.tsx
+│   │   ├── PhotoCarousel.tsx
+│   │   ├── ProfileTab.tsx
+│   │   ├── ProfileViewModal.tsx
+│   │   ├── SuperLikeModal.tsx
+│   │   ├── SwipeCard.tsx
+│   │   ├── SwipeCardStack.tsx
+│   │   ├── SwipeIndicators.tsx
+│   │   ├── SwipeReactionOverlay.tsx
+│   │   ├── UserInfo.tsx
+│   │   ├── VideoCallModal.tsx
+│   │   └── VoiceCallModal.tsx
+│   │
 │   ├── pages/
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   │
+│   ├── data/
+│   │   ├── conversations.ts
+│   │   ├── mockProfiles.ts
+│   │   ├── mockUsers.ts
+│   │   ├── reactions.ts
+│   │   └── users.ts
+│   │
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   ├── use-toast.ts
+│   │   └── useVoiceRecording.tsx
+│   │
+│   ├── lib/
+│   │   └── utils.ts
+│   │
+│   ├── types/
+│   │   └── user.ts
+│   │
+│   ├── App.css
 │   ├── App.tsx
+│   ├── index.css
 │   ├── main.tsx
+│   └── vite-env.d.ts
+│
+├── .gitignore
+├── bun.lockb
+├── components.json
+├── eslint.config.js
 ├── index.html
+├── package-lock.json
 ├── package.json
-├── tailwind.config.js
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.app.json
 ├── tsconfig.json
+├── tsconfig.node.json
 └── vite.config.ts
+
 ```
 
 ---
